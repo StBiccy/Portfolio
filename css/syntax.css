@@ -1,0 +1,86 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'quicksand', serif;
+}
+
+.section-content{
+    width: auto;
+    background-color: black;
+    overflow: hidden;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.section-heading{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'quicksand', serif;
+}
+
+.abt-photo{
+    float: left;
+    width: 20%;
+    margin-right: 20px;
+}
+
+.abt-text{
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(58, 58, 58);
+    color: greenyellow;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none; 
+    color: greenyellow;
+}
+
+li a:hover {
+    background-color: aliceblue;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width:  100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 200px;
+    row-gap: 200px;
+    grid-template-columns: repeat(auto-fit, 300px);    
+    grid-template-rows: max-content;
+}
+
+
+.grid-container > div{
+    background-color: #eee;
+}
+
+
+.grid-container > div:nth-child(odd){
+    background-color: #ddd;
+}
+
+.thumbnail{
+    width: 100%;
+}
