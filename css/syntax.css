@@ -1,123 +1,131 @@
 @font-face {
-    font-family: 'pixeloid sans';
-    font-weight: 400;
-    src: url('../fonts/pixeloidsans-mlxmm-webfont.woff2') format('woff2'), 
-         url('../fonts/pixeloidsans-mlxmm-webfont.woff') format('woff'); 
+  font-family: "pixeloid sans";
+  font-weight: 400;
+  src: url("../fonts/pixeloidsans-mlxmm-webfont.woff2") format("woff2"),
+    url("../fonts/pixeloidsans-mlxmm-webfont.woff") format("woff");
 }
 
 body {
-    padding: 0%;
-    margin: 0%;
-    font-family: 'pixeloid sans';
+  padding: 0%;
+  margin: 0%;
+  font-family: "pixeloid sans";
 }
 
-.section-content{
-    width: auto;
-    background-color: #080808;
-    overflow: hidden;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 50px;
-    border-bottom: dotted;
-    border-bottom-color: #F8F9FA;
-    border-top: dotted;
-    border-top-color: #ADB5BD;
+.section-content {
+  width: auto;
+  background-color: #080808;
+  overflow: hidden;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 50px;
+  border-bottom: dotted;
+  border-bottom-color: #f8f9fa;
+  border-top: dotted;
+  border-top-color: #adb5bd;
+  position: relative;
+  top: 800px;
 }
 
-body > .section-content:nth-child(odd){
-    background-color: #252525;
+body > .section-content:nth-child(odd) {
+  background-color: #252525;
 }
 
-.section-heading{
-    font-size: 40px;
-    text-align: center;
-    font-family: 'pixeloid sans', serif;
+.section-heading {
+  font-size: 40px;
+  text-align: center;
+  font-family: "pixeloid sans", serif;
 }
 
-.abt-photo{
-    border: dashed;
-    border-color: #F8F9FA;
-    border-radius: 10px;
-    
-    float: left;
-    width: 20%;
-    margin-right: 20px;
+.abt-photo {
+  border: dashed;
+  border-color: #f8f9fa;
+  border-radius: 10px;
+
+  float: left;
+  width: 20%;
+  margin-right: 20px;
 }
 
-.abt-text{
-    color: #F8F9FA;
-    font-size: 16   px;
-    overflow: hidden;    
+.abt-text {
+  color: #f8f9fa;
+  font-size: 16 px;
+  overflow: hidden;
 }
 
-nav{
-    background-color: #080808;
-    position: sticky;
-    top: 0;
-    width:  100%;
-    text-align: center ;
-    justify-content: center;
-    align-items: center;
+nav {
+  background-color: #080808da;
+  border-bottom: dotted;
+  border-bottom-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-
 
 nav > img {
-    width: 20%;
-    margin-right: 2%;
-    margin-left: 2%;
+  width: 20%;
+  margin-right: 2%;
+  margin-left: 2%;
 }
 
-
-.abt-cont:hover{
-    content: url(../images/AboutMeHover.png);
+.abt-cont:hover {
+  content: url(../images/AboutMeHover.png);
 }
 
-.grid-container{
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    grid-gap: 100px;
-    row-gap: 200px;
-    grid-template-columns: repeat(auto-fit, 300px);    
-    grid-template-rows: max-content;
+.grid-container {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-gap: 100px;
+  row-gap: 200px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-rows: max-content;
 }
 
-.grid-container > div{
-    border: black;
-    border-style: solid;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: #eee;
+.grid-container > div {
+  border: black;
+  border-style: solid;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #eee;
 }
 
-.grid-container > div:nth-child(odd){
-    background-color: #ddd;
+.grid-container > div > p {
+  padding: 3px;
 }
 
-.thumbnail{
-    width: 100%;
+.grid-container > div:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.showreel {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
+  .abt-photo-div {
+    text-align: center;
+  }
 
-    .abt-photo-div{
-        text-align: center;
-    }
-
-    .abt-photo{
-        float: none;
-        width: 200px;
-        margin-right: none;
-    }
+  .abt-photo {
+    float: none;
+    width: 200px;
+    margin-right: none;
+  }
 }
 
 @media (max-width: 300px) {
-
-
-    .abt-photo{
-        float: none;
-        width: 50%px;
-        margin-right: none;
-    }
+  .abt-photo {
+    float: none;
+    width: 50%px;
+    margin-right: none;
+  }
 }
-
