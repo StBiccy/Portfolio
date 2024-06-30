@@ -22,8 +22,6 @@ body {
   border-bottom-color: #f8f9fa;
   border-top: dotted;
   border-top-color: #adb5bd;
-  position: relative;
-  top: 800px;
 }
 
 body > .section-content:nth-child(odd) {
@@ -104,10 +102,16 @@ nav > img {
   width: 100%;
 }
 
+.showreel-container {
+  padding-top: 5%;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
 .showreel {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
+  width: 70%;
+  border: dashed;
+  border-color: #f8f9fa;
 }
 
 @media (max-width: 1000px) {
