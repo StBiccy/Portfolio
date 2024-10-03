@@ -13,7 +13,7 @@ body {
 
 .section-content {
   width: auto;
-  background-color: #080808;
+  background-color: #131313;
   overflow: hidden;
   padding-left: 20%;
   padding-right: 20%;
@@ -29,6 +29,7 @@ body > .section-content:nth-child(odd) {
 }
 
 .section-heading {
+  color: #f8f9fa;
   font-size: 40px;
   text-align: center;
   font-family: "pixeloid sans", serif;
@@ -44,11 +45,13 @@ body > .section-content:nth-child(odd) {
   margin-right: 20px;
 }
 
-.abt-text {
+.base-text {
   color: #f8f9fa;
   font-size: 16 px;
   overflow: hidden;
 }
+
+
 
 nav {
   background-color: #080808da;
@@ -68,21 +71,27 @@ nav > img {
   margin-left: 2%;
 }
 
-.abt-cont:hover {
+nav > .abt-cont:hover {
   content: url(../images/AboutMeHover.png);
 }
 
 .grid-container {
   justify-content: center;
-  align-items: center;
+  align-items: start;
   display: grid;
   grid-gap: 100px;
-  row-gap: 200px;
+  row-gap: 100px;
   grid-template-columns: repeat(auto-fit, 300px);
   grid-template-rows: max-content;
 }
 
-.grid-container > div {
+.grid-container > a {
+  text-decoration: none; 
+  color: inherit; 
+  display: block;
+}
+
+.grid-container > a > div {
   border: black;
   border-style: solid;
   border-radius: 5px;
@@ -90,11 +99,20 @@ nav > img {
   background-color: #eee;
 }
 
-.grid-container > div > p {
-  padding: 3px;
+.grid-container > a >div {
+  border: black;
+  border-style: solid;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #eee;
 }
 
-.grid-container > div:nth-child(odd) {
+.grid-container > a > div > h3 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.grid-container > a > div:nth-child(odd) {
   background-color: #ddd;
 }
 
@@ -132,4 +150,18 @@ nav > img {
     width: 50%px;
     margin-right: none;
   }
+}
+
+.demo-div {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.demo-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
 }
