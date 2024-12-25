@@ -81,6 +81,7 @@ nav > a > .abt-cont:hover {
   grid-gap: 100px;
   row-gap: 100px;
   grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 220px);
   grid-template-rows: max-content;
 }
 
