@@ -127,6 +127,8 @@ nav > a > .abt-cont:hover {
 
 .showreel {
   width: 70%;
+  max-width: 70vw;
+  max-height: 70vh;
   border: dashed;
   border-color: #f8f9fa;
 }
@@ -178,4 +180,5 @@ nav > a > .abt-cont:hover {
   margin-right: 10%;
   font-size: 16 px;
   overflow: hidden;
+  text-align: center;
 }
